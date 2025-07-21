@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Services</title>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" ...>
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="Bootstrap/js/jquery-3.7.1.min.js"></script>
+    <!-- Swiper CSS (in <head>) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .section-title h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      font-size: 18px;
+      color: #666;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .service-card {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      width: 23%;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .service-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .service-card h3 {
+      font-size: 20px;
+      color: #6b21a8;
+      text-align: center;
+      margin: 15px 0;
+    }
+
+    @media (max-width: 992px) {
+      .service-card {
+        width: 48%;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .service-card {
+        width: 100%;
+      }
+    }
+  
+  
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .card {
+      background-color: #fff;
+      width: 23%;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s;
+      text-align: center;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card h3 {
+      font-size: 20px;
+      color: #6b21a8;
+      margin: 15px 0;
+    }
+
+    @media (max-width: 992px) {
+      .card {
+        width: 48%;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+ <!-- ✅ HEADER START -->
+<header class="header-1">
+  <!-- 🔹 Topbar -->
+  <div class="bg-dark text-white py-2" style="height: 100px;">
+    <div class="container d-flex justify-content-between align-items-center flex-wrap">
+      <div class="small flex">
+        <i class="fas fa-phone-alt me-2"></i> +91 98765 43210, +91 78279 45651
+        <span class="ms-3"><i class="fas fa-envelope me-2"></i> info@taradiagnostics.com</span>
+      </div>
+      <div class="d-none d-lg-flex gap-3">
+        <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 🔹 Top Brand Title -->
+  <div class="bg-white py-3 shadow-sm border-bottom position-relative" style="z-index: 1030;">
+    <div class="container text-center">
+      <h5 class="mb-0 fw-bold text-primary text-uppercase" style="letter-spacing: 1px; font-family: 'Segoe UI', sans-serif;">
+        Tara <span style="color:red;">Diagnos</span>tics Charitable
+      </h5>
+    </div>
+  </div>
+
+  <!-- 🔹 Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top" style="z-index: 1020;">
+    <div class="container">
+      <!-- Logo & Brand -->
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <img src="/image/images.jpg" alt="Logo" style="max-height: 45px;">
+        <span class="fw-bold text-dark fs-5">Tara Diagnostics</span>
+      </a>
+
+      <!-- Mobile toggle -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menu -->
+      <div class="collapse navbar-collapse" id="main-navigation">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#popular-tests">At Your Services</a></li>
+
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#facilities" data-bs-toggle="dropdown">Facilities</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#CBC">MRI</a></li>
+              <li><a class="dropdown-item" href="#CBC">CT</a></li>
+              <li><a class="dropdown-item" href="#popular-tests">LAB</a></li>
+              <li><a class="dropdown-item" href="#popular-tests">OPD</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="#enquiry">Appointments</a></li>
+          <li class="nav-item"><a class="nav-link" href="/admin/reports">Online Report</a></li>
+          <li class="nav-item"><a class="nav-link" href="#healthcare">Health Packages</a></li>
+          <li class="nav-item"><a class="nav-link" href="#enquiry">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<!-- ✅ HEADER END -->
+
+<section class="container">
+    <div class="section-title">
+      <h2>Our Services</h2>
+      <p>We offer high-quality services to help grow your business.</p>
+    </div>
+
+    <div class="services">
+      <!-- Service 1 -->
+      <div class="service-card">
+        <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBQi7jyj-Q7y_OgMyaMZtPzh_0k6rcLoD7DNEpI1YfUn0OObAVqVLwM5EAm_wsX9KuQ5c&usqp=CAU" alt="Cancer">
+        <h3>Cancer</h3>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="service-card">
+        <img src="https://www.shriramsinghhospital.com/images/pediatrics-doctor-noida.jpg" alt="Pediatrics">
+        <h3>Pediatrics</h3>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="service-card">
+        <img src="https://wild-soft.org/wp-content/uploads/2025/03/full-body-check-up-package-1-1024x683-1.jpg" alt="Home Collection">
+        <h3>Home Collection</h3>
+      </div>
+
+      <!-- Service 4 -->
+      <div class="service-card">
+        <img src="https://www.gunamhospital.com/assets/images/speciality/32d5931a760835fa92b176b7547ed7f4Diabetology.jpg" alt="Diabetology">
+        <h3>Diabetology</h3>
+      </div>
+    </div>
+  </section>
+
+    <section class="container">
+    <div class="services">
+      <!-- Service 1 -->
+      <div class="card">
+        <img src="https://aayush-hospitals.com/wp-content/uploads/2023/02/Rheumatology.png" alt="Rheumatology">
+        <h3>Rheumatology</h3>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="card">
+        <img src="https://www.libertyhospital.in/img/services/gastroenterology_medical.jpg" alt="Gastroenterology">
+        <h3>Gastroenterology</h3>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="card">
+        <img src="https://bansalgroup-assets.s3.ap-south-1.amazonaws.com/PRD/Bansal_Hospital/2020/09/Neurology-1.jpg" alt="Neurology">
+        <h3>Neurology</h3>
+      </div>
+
+      <!-- Service 4 -->
+      <div class="card">
+        <img src="https://sttheresashospital.com/assets/img/sth-imgs/urology.jpg" alt="Urology">
+        <h3>Urology</h3>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- WHY CHOOSE US SECTION -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="mb-4 fw-bold text-center text-primary">Why Choose Tara Diagnostic</h2>
+    
+    <p class="fs-5">
+      Tara Diagnostic offers a variety of services to our patients at affordable prices, as we prioritize your health. Our team of skilled and talented individuals is committed to providing the best service to our clients.
+    </p>
+    
+    <p class="fs-5">
+      Supporting people is possible through a Charitable Pathology service. Our technologies have been upgraded to ensure that each test and check-up report is 100% accurate.
+    </p>
+    
+    <p class="fs-5">
+      30,000+ doctors have trusted our organization. Active in the business for quite some time. From our growth and expansion have been significant journeys of many things since humble beginnings.
+    </p>
+    
+    <p class="fs-5">
+      We are recognized as one of the top diagnostic centers and pathology labs in Delhi NCR because of our expertise in problem-solving and efficiency in all areas.
+    </p>
+  </div>
+</section>
+
+
+
+
+ <section class="container">
+    <div class="services">
+      
+      <!-- Cytology -->
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPND37SzLge05iVzcI0X5m4g9_HXfDFolTk5zE83E2bjpOZPpSVYQ9mCU-1HnnrJN8QAE&usqp=CAU" alt="Cytology">
+        <h3>Cytology</h3>
+      </div>
+
+      <!-- Endocrinology -->
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvblUI2PbEHHLM1AdnXZNZwoFiW-UkqlGy2w&s" alt="Endocrinology">
+        <h3>Endocrinology</h3>
+      </div>
+
+      <!-- Fever Panel -->
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq9DXRTUfLOmB4z7-yw2_X7R-F3OSNwg5X4w&s" alt="Fever Panel">
+        <h3>Fever Panel</h3>
+      </div>
+
+      <!-- Liver Diseases -->
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnCpxR-giAdVra6OHWSvuMnZxVgE71vTfwnA&s" alt="Liver Diseases">
+        <h3>Liver Diseases</h3>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="container">
+    <div class="services">
+      <!-- Service 1 -->
+      <div class="service-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHwVY7aO2kob-yIHjQPfEiYyo4ixisjkdqmQ&s" alt="Viral Diseases">
+        <h3>Viral Diseases</h3>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="service-card">
+        <img src="https://medicalbuyer.co.in/wp-content/uploads/2021/07/Microbiology.jpg" alt="Microbiology">
+        <h3>Microbiology</h3>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="service-card">
+        <img src="https://www.endocrine.org/-/media/endocrine/images/patient-engagement-webpage/condition-page-images/hormones/hormones_and_endocrine_function_1796x943.jpg" alt="Hormones">
+        <h3>Hormones</h3>
+      </div>
+
+      <!-- Service 4 -->
+      <div class="service-card">
+        <img src="https://www.jnuhealthcare.com/Uploads/packageImages/5pacs_Women-check-up.webp" alt="Health Package">
+        <h3>Health Package</h3>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="container">
+    <div class="services">
+      <!-- Service 1 -->
+      <div class="service-card">
+        <img src="https://www.theindiahealthcare.com/wp-content/uploads/2018/11/orthopedics.jpg" alt="Viral Diseases">
+        <h3>Orthopedics</h3>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="service-card">
+        <img src="https://criver.widen.net/content/sgime26hau/jpeg/iStock-512051390.jpg?crop=true&keep=c&q=80&color=ffffffff&u=atq9fr&w=640&h=426" alt="Microbiology">
+        <h3>Immunology</h3>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="service-card">
+        <img src="https://cdn-assets-eu.frontify.com/s3/frontify-enterprise-files-eu/eyJvYXV0aCI6eyJjbGllbnRfaWQiOiJmcm9udGlmeS1leHBsb3JlciJ9LCJwYXRoIjoiaWhoLWhlYWx0aGNhcmUtYmVyaGFkXC9hY2NvdW50c1wvYzNcLzQwMDA2MjRcL3Byb2plY3RzXC8yMDlcL2Fzc2V0c1wvOTZcLzMzNjc1XC8xODRlOGM3YzkzN2M0MWNhZTRlOTQ3MGZiZWUzZTE4NS0xNjQ2OTI0NTEyLmpwZyJ9:ihh-healthcare-berhad:a55QdHAYCRsnrmGTqUeW0gUMDS_26f8NrmaN8WWgESo?width=781&height=440&crop=fp&fp=0.5,0.5&fp_zoom=1&format=webp" alt="Hormones">
+        <h3>Otorhinolaryngology</h3>
+      </div>
+
+      <!-- Service 4 -->
+      <div class="service-card">
+        <img src="https://www.diagnopein.com/img/Radiology/ct-scan.jpeg" alt="Health Package">
+        <h3>City scan</h3>
+      </div>
+    </div>
+  </section>
+
+
+    <footer class="footer-2 bg-dark text-light pt-5">
+  <div class="footer-pri pb-4">
+    <div class="container">
+      <div class="row">
+        <!-- About -->
+        <div class="col-lg-3 mb-4">
+          <div class="widget widget-about">
+            <!-- <a href="index.html">
+              <img src="logo.png" class="logo-footer mb-3" alt="Logo" width="120" />
+            </a> -->
+            <p class="footer-text">
+              A wonderful serenity has taken possession of my entire soul,
+              like these sweet mornings of spring which I enjoy with my whole heart.
+            </p>
+            <ul class="social list-inline mt-3">
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-facebook-f text-white fs-5"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-twitter text-white fs-5"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-linkedin-in text-white fs-5"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-instagram text-white fs-5"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="col-lg-3 mb-4">
+          <div class="widget widget-contact">
+            <h5 class="text-white fw-bold mb-3">Reach Out</h5>
+            <ul class="footer-text list-unstyled">
+              <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> Yugpurush Mahashay Dharampal MDH Charitable Diagnostic Bhawan, Karkardooma, New Delhi-110092</li>
+              <li class="mb-2"><i class="fas fa-phone me-2"></i> +91 98765 43210, 7827945651</li>
+              <li><i class="fas fa-envelope me-2"></i> info@taradiagnostics.com</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Useful Links -->
+        <div class="col-lg-3 mb-4">
+          <div class="widget widget-links">
+            <h5 class="text-white fw-bold mb-3">Useful Links</h5>
+            <ul class="list-unstyled footer-text">
+              <li><a href="#" class="text-light text-decoration-none">View Departments</a></li>
+              <li><a href="#contact.html" class="text-light text-decoration-none">Contact Us</a></li>
+              <li><a href="#doctors-style-2.html" class="text-light text-decoration-none">Doctors On Panel</a></li>
+              <li><a href="#why-us-1.html" class="text-light text-decoration-none">Facilities Available</a></li>
+              <li><a href="#about-us-1.html" class="text-light text-decoration-none">About Us</a></li>
+              <li><a href="#policies.html" class="text-light text-decoration-none">Hospital Rules</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Timings -->
+        <div class="col-lg-3 mb-4">
+          <div class="widget widget-timings">
+            <h5 class="text-white fw-bold mb-3">Hospital Timings</h5>
+            <table class="table table-bordered text-light">
+              <tbody>
+                <tr>
+                  <td>Mon - Sun</td>
+                  <td>24 x 7</td>
+                </tr>
+                <tr>
+                  <td>All Days Open</td>
+                  <td>24 Hours</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Secondary Footer -->
+  <div class="footer-sec bg-secondary text-light py-3">
+    <div class="container d-flex justify-content-between flex-wrap">
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item me-3"><a href="#" class="text-light text-decoration-none">Privacy Policy</a></li>
+        <li class="list-inline-item me-3"><a href="#" class="text-light text-decoration-none">Terms & Conditions</a></li>
+        <li class="list-inline-item"><a href="#" class="text-light text-decoration-none">Usage Rights</a></li>
+      </ul>
+      <p class="mb-0 text-light">&copy; 2025, Shailendra Kr — All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+  
+    <!-- Swiper JS (before </body>) -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
